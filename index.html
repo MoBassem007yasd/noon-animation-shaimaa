@@ -1,5 +1,26 @@
-  <!doctype html>
-  <title>Animation</title>
-  <body style="margin:0;background:#fff">
-  <video src="noon-login-animation.mp4" autoplay loop muted playsinline controls style="width:100%"></video>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;      /* removes the page scrollbar */
+      background: #fff;
+    }
+    video {
+      display: block;        /* removes the small gap under the video */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;     /* use "contain" if you don't want any cropping */
+      pointer-events: none;  /* hides the hover controls / blocks clicks */
+    }
+  </style>
+</head>
+<body>
+  <video src="noon-login-animation.mp4" autoplay muted loop playsinline></video>
+</body>
+</html>
